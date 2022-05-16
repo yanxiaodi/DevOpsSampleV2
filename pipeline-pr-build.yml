@@ -25,16 +25,10 @@ steps:
     packageType: 'sdk'
     version: '$(dotNetVersion)'
 
-- task: NuGetToolInstaller@1
-  displayName: 'use nuget tool'
-  inputs:
-    versionSpec: '5.8'
-
-- task: NuGetCommand@2
-  displayName: 'nuget restore'
+- task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    restoreSolution: '$solution'
+    projects: '$(solution)'
     feedsToUse: 'select'
 
 - task: DotNetCoreCLI@2
