@@ -36,7 +36,6 @@ steps:
   inputs:
     command: 'build'
     projects: '$(solution)'
-    arguments: '--framework $(dotNetFramework) -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)'
 
 
 - task: DotNetCoreCLI@2
