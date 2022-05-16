@@ -42,7 +42,7 @@ steps:
   inputs:
     command: 'build'
     projects: '$(solution)'
-    arguments: '--framework $(dotNetFramework) --self-contained -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)'
+    arguments: '--framework $(dotNetFramework) -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)'
 
 
 - task: DotNetCoreCLI@2
