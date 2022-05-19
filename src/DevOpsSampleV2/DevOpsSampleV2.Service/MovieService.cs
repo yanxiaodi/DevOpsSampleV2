@@ -17,7 +17,7 @@ namespace DevOpsSampleV2.Service
                 new() { Genre = "Action", Id = 7, Title = "The Dark Knight Rises" },
                 new() { Genre = "Comedy", Id = 8, Title = "The Hangover Part II" },
                 new() { Genre = "Drama", Id = 9, Title = "The Godfather Part II" },
-                new() { Genre = "Horror", Id = 10, Title = "The Exorcist Part II" },
+
             });
         }
     }
