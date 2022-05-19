@@ -17,7 +17,7 @@ namespace DevOpsSampleV2.WebApp.Pages
 
         public async Task OnGet()
         {
-            Movies = await _movieService.GetListAsync();
+            Movies = await _movieService.GetTop10ListAsync();
         }
     }
 }
