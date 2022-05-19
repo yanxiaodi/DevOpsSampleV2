@@ -7,10 +7,10 @@ namespace DevOpsSampleV2.Tests
     public class MovieServiceTest
     {
         [Fact]
-        public async Task Test1()
+        public async Task GetTop10Test1()
         {
             var movieService = new MovieService();
-            var list = await movieService.GetListAsync();
+            var list = await movieService.GetTop10ListAsync();
             Assert.Equal(10, list.Count);
             
         }

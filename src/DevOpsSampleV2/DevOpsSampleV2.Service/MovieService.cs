@@ -4,7 +4,7 @@ namespace DevOpsSampleV2.Service
 {
     public class MovieService : IMovieService
     {
-        public Task<List<Movie>> GetListAsync()
+        public Task<List<Movie>> GetTop10ListAsync()
         {
             return Task.FromResult(new List<Movie>()
             {

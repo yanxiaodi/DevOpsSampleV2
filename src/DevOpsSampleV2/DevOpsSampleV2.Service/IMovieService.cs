@@ -4,6 +4,6 @@ namespace DevOpsSampleV2.Service
 {
     public interface IMovieService
     {
-        Task<List<Movie>> GetListAsync();
+        Task<List<Movie>> GetTop10ListAsync();
     }
 }
